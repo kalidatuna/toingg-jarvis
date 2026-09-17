@@ -8,6 +8,7 @@ rm -rf "$APP"
 mkdir -p "$APP/Contents/MacOS" "$APP/Contents/Resources"
 
 cp "$ROOT/jarvis_launcher.py" "$APP/Contents/MacOS/"
+chmod +x "$APP/Contents/MacOS/jarvis_launcher.py"
 cp "$ROOT/JARVIS_README.md" "$APP/Contents/Resources/" 2>/dev/null || true
 
 cat > "$APP/Contents/Info.plist" <<PLIST
